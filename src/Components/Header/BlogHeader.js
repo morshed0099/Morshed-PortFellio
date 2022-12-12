@@ -20,14 +20,7 @@ const Header = () => {
 
     const menu =
         <>
-            <NavLink className='font-bold text-1xl' to='/'>Home</NavLink>
-            <Link className='font-bold text-1xl' to='contack' spy={true} smooth={true} duration={1000}>Contact Me</Link>
-
-            <Link className='font-bold text-1xl' to='service' spy={true} smooth={true} duration={1000}>Service</Link>
-            <Link className='font-bold text-1xl' to='skill' spy={true} smooth={true} duration={1000}>Skill</Link>
-            <Link className='font-bold text-1xl' to='about' spy={true} smooth={true} duration={1000}>About Me</Link>
-            <Link className='font-bold text-1xl' to='porjects' spy={true} smooth={true} duration={1000}>Projects</Link>
-
+            <NavLink className='font-bold text-1xl' to='/'>Home</NavLink>  
             <NavLink className='font-bold text-1xl' to='/blog'>blog</NavLink>
         </>
     return (

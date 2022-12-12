@@ -1,0 +1,45 @@
+[
+    {
+        "id": "1",
+        "name": "Sell Phone",
+        "img1": "https://i.ibb.co/VTb5tRJ/Web-capture-12-12-2022-17546-sell-phone-d2784-web-app.jpg",
+        "img2": "https://i.ibb.co/10XtK3G/Web-capture-12-12-2022-1760-sell-phone-d2784-web-app.jpg",
+        "img3": "https://i.ibb.co/4JkvPcp/Web-capture-12-12-2022-17636-sell-phone-d2784-web-app.jpg",
+        "description": "Sell Phone is site for sell old used phone and also buye phone ",
+        "github": "https://github.com/morshed0099/sell-phone-client",
+        "livesite": "https://sell-phone-d2784.web.app/",
+        "des_1": "firebase authentication apply for login and sign up ",
+        "des_2": "user can login as a buyer or seller",
+        "des_3": "for paid system use srtipe ",
+        "tecnology_used": "React, Strip payment-method, React-query, Firebase, Tailwind,",
+        "des_4": "seller and buyer also has dashboad for seller addto wishlist and for paid, and seller dashbod for upload product and add to feauter list for sell and also delete product "
+    },
+    {
+        "id": "2",
+        "github": "https://github.com/morshed0099/learn-programing-",
+        "livesite": "https://learn-programing-cbb02.web.app/",
+        "name": "Learn Programming",
+        "img1": "https://i.ibb.co/jr5ffVV/Web-capture-12-12-2022-17511-learn-programing-cbb02-web-app.jpg",
+        "img2": "https://i.ibb.co/ngYDFdJ/Web-capture-12-12-2022-17450-learn-programing-cbb02-web-app.jpg",
+        "img3": "https://i.ibb.co/n672nSn/Web-capture-12-12-2022-17527-learn-programing-cbb02-web-app.jpg",
+        "description": "Learn Programming is a site for tutorial publish free and also paid",
+        "tecnology_used": "React, Firebase, Bootstrap,",
+        "des_1": "firebase authentication apply for login and sign up ",
+        "des_2": "user after login get premium access and also download information",
+        "des_3": "user choose their tutorial very eassily from tutorial category"
+    },
+    {
+        "id": "3",
+        "github": "https://github.com/morshed0099/your-photograper-client",
+        "livesite":"https://your-photographer-e2b13.web.app/",
+        "name": "Your Photographer",
+        "img1": "https://i.ibb.co/HYQYrdH/Web-capture-12-12-2022-17218-your-photographer-e2b13-web-app.jpg",
+        "img2": "https://i.ibb.co/yFq3FPp/Web-capture-12-12-2022-17246-your-photographer-e2b13-web-app.jpg",
+        "img3": "https://i.ibb.co/fDrnnmf/Web-capture-12-12-2022-17419-your-photographer-e2b13-web-app.jpg",
+        "description": "your photographer is a site for photographer ",
+        "tecnology_used": "React, Firebase, Tailwind,Flowbite componet",
+        "des_1": "firebase authentication apply for login and sign up ",
+        "des_2": "any one can upload photo and share it for client ",
+        "des_3": "photogaraphe site user also commented another post and delete comment and updata also"
+    }
+]
