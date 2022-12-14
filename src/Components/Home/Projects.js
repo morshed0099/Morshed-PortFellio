@@ -5,10 +5,10 @@ import { Link } from 'react-router-dom';
 const Projects = ({ project }) => {
     console.log(project)
     return (
-        <div id='porjects'>
+        <div id='porjects' className='dark:bg-gray-900'>
             <div className='m-2 p-2 rounded-md shadow-lg' >
-                <div className=' h-[300px] overflow-scroll' >
-                    <img className='hover:scale-125 ease-linear duration-200 ' src={project.img1} alt="" />
+                <div className='image-wrap' >
+                    <img className='' src={project.img1} alt="" />
                 </div>
                 <div className='flex justify-between'>
                     <Link to={`/project/${project.id}`} ><button className='btn btn-outline mt-3  btn-primary text-center btn-sm'>Details</button></Link>

@@ -7,14 +7,16 @@ import github from '../../img/icons8-github.gif'
 const PersonalInfo = () => {
     return (
         <div id='about'  className='grid gap-4 grid-cols-1 md:grid-cols-2 mx-6'>
-            <div  data-aos="zoom-out-up"  className='rounded-md p-3 shadow-md'>
-                <h1 className='font-bold text-center text-2xl'>About Me</h1>
+            <div  data-aos="zoom-out-up"  className='rounded-md dark:bg-black p-3 shadow-md'>
+                <h1 className='font-bold text-black dark:text-white text-center text-2xl'>About Me</h1>
+                <div className='text-black dark:text-white'>
                 <p>Hi My name is MD.Golam Morshed </p>
                 <p>I am a Web Developer ,ReactJs Developer ,Frontend Developer</p>
                 <p>I love coding.Coding is my passion.I am from Dhaka,Bangladesh.Recently i just complete Complete Web Developmet course by programming hero.My dream is , I will be a good developer .I am dedicate to learn new thinks and also love to do hard work.</p>
                 <p> Date of Birth: 1.1.1996</p>
                 <p> Education: Bachalor of Social Science (BSS)</p>
                 <p> Email: mdgolammorshed0099@gmail.com</p>
+                </div>
                 <h3 className='text-center text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600 font-bold text-2xl'>Follow Me On</h3>
                 <div data-aos="zoom-out-down" className='flex justify-evenly'>
                     <a href='https://www.facebook.com/morshed0099'><div className='w-16 m-2 rounded-full shadow-lg h-16'>
@@ -32,8 +34,8 @@ const PersonalInfo = () => {
                 </div>
                 {/* <img  data-aos="zoom-out-right" className='w-[400px] mx-auto rounded m-4' src={morshed} alt="" /> */}
             </div>
-            <div  id='skill' className='rounded-md shadow-md p-4'>
-                   <h1 className='text-center font-bold text-2xl'>Skills</h1>
+            <div  id='skill' className='rounded-md dark:bg-black shadow-md p-4'>
+                   <h1 className='text-center text-black dark:text-white font-bold text-2xl'>Skills</h1>
                 <h3 className='text-center mt-5 text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600 font-bold text-2xl'>Frontend Skills</h3>
                 <div data-aos="zoom-out-down" className='flex justify-around mt-4 items-center'>
                     <h4 className='text-center  text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600 font-bold text-1xl'>HTML</h4>

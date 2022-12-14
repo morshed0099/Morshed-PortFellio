@@ -6,7 +6,10 @@ import { Link } from 'react-scroll';
 
 
 
-const Header = () => {
+const Header = ({setDarkMode,darkMode}) => {
+
+
+  
     let prevScrollpos = window.pageYOffset;
     window.onscroll = function () {
         const currentScrollPos = window.pageYOffset;
@@ -31,7 +34,8 @@ const Header = () => {
             <NavLink className='font-bold text-1xl' to='/blog'>blog</NavLink>
         </>
     return (
-        <div id='navbar' className="navbar bg-opacity-60 sticky h-[80px] top-0 z-50 bg-base-100">
+        <div id='navbar' className={`navbar bg-opacity-60 sticky h-[80px] top-0 z-50 bg-base-100 dark:text-white dark:bg-gray-900 ` }>
+           
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -42,7 +46,7 @@ const Header = () => {
 
                     </ul>
                 </div>
-                <Link to='home'><h1 className='flex p-8 items-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600'>Morshed</h1></Link>
+                <Link to='home'><h1 className='flex p-8 items-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600 dark:text-gray-200'>Morshed</h1></Link>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -50,6 +54,10 @@ const Header = () => {
 
                 </ul>
             </div>
+            <label class="switch">
+                <input type="checkbox" onClick={() => setDarkMode(!darkMode)} />
+                <span class="slider round"></span>
+            </label>
 
         </div>
     );

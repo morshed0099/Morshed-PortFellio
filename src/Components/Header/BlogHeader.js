@@ -20,8 +20,9 @@ const Header = () => {
 
     const menu =
         <>
-            <NavLink className='font-bold text-1xl' to='/'>Home</NavLink>  
+            <NavLink className='font-bold text-1xl' to='/'>Home</NavLink>
             <NavLink className='font-bold text-1xl' to='/blog'>blog</NavLink>
+
         </>
     return (
         <div id='navbar' className="navbar bg-opacity-60 sticky h-[80px] top-0 z-50 bg-base-100">
@@ -37,11 +38,13 @@ const Header = () => {
                 </div>
                 <Link to='home'><h1 className='flex p-8 items-center text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600'>Morshed</h1></Link>
             </div>
+          
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
                     <li>{menu}</li>
 
                 </ul>
+               
             </div>
 
         </div>

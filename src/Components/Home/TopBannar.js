@@ -8,6 +8,8 @@ const TopBannar = () => {
     return (
         <>
             <div  className='hero' style={{ backgroundImage: `url("https://concredo.mu/wp-content/uploads/2020/05/welcome-bg.jpg")` }}>
+           
+           
             <div className="hero-overlay bg-opacity-60"></div>
                 <div className="flex justify-center  items-center  flex-wrap">
                     <div className='mr-4 w-[full]'>
