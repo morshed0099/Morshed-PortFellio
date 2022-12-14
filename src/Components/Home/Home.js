@@ -1,3 +1,4 @@
+import ParticlesBg from 'particles-bg';
 import React, { useEffect, useState } from 'react';
 
 import AboutMe from './AboutMe';
@@ -20,13 +21,13 @@ const Home = () => {
 
 
     return (
-        <div  id='home' className='bg-white dark:bg-gray-900'>
-           
-            <TopBannar></TopBannar>
+        <div  id='home' className='bg-white dark:bg-gray-900'> 
+             <TopBannar></TopBannar>         
             <h1 className='flex p-8 items-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600'>My Services <div className='w-[400px] hidden md:block bg-gradient-to-r from-pink-400 to-blue-600 ml-4 rounded-none h-[5px] bg-black'> </div> </h1>
-            <AboutMe></AboutMe>
+            <AboutMe></AboutMe>            
             <h1 className='flex p-8 items-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600'>Personal Info <div className='w-[400px] hidden md:block bg-gradient-to-r from-pink-400 to-blue-600 ml-4 rounded-none h-[5px] bg-black'> </div> </h1>
             <PersonalInfo></PersonalInfo>
+           
             <h1 className='flex p-8 items-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600'>Contact  Me <div className='w-[400px] hidden md:block bg-gradient-to-r from-pink-400 to-blue-600 ml-4 rounded-none h-[5px] bg-black'> </div> </h1>
             <ContackMe id='contack'></ContackMe>
             <h1 className='flex p-8 items-center text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-pink-400  to-blue-600'>Projects<div className='w-[400px] hidden md:block bg-gradient-to-r from-pink-400 to-blue-600 ml-4 rounded-none h-[5px] bg-black'> </div> </h1>
@@ -38,7 +39,8 @@ const Home = () => {
                     ></Projects>)
                 }
                 
-            </div>            
+            </div>  
+                    
         </div>
     );
 };

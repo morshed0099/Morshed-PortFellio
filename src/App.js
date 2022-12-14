@@ -9,6 +9,7 @@ import { useEffect } from 'react';
 import Project from './Components/Home/Project';
 import Blog from './Components/Blog/Blog';
 
+
 const router=createBrowserRouter([
   {
     path:'/',
@@ -40,6 +41,7 @@ function App() {
   }, []);
   return (
     <div>
+     
       <RouterProvider router={router}>
          
       </RouterProvider>
