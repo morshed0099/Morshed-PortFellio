@@ -56,6 +56,9 @@ input:checked + .slider:before {
 }
 .particles-bg-canvas-self{
   height: 300px !important;
+  position: center;
+  object-fit: cover;
+
 }
 /* Rounded sliders */
 .slider.round {
