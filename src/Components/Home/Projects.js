@@ -8,7 +8,7 @@ const Projects = ({ project }) => {
         <div id='porjects' className='dark:bg-black'>
             <div className=' p-2 rounded-md shadow-lg' >
                 <div className='image-wrap' >
-                    <img className='' src={project.img1} alt="" />
+                    <img className='w-full' src={project.img1} alt="" />
                 </div>
                 <div className='flex justify-between'>
                     <Link to={`/project/${project.id}`} ><button className='btn btn-outline mt-3  btn-primary text-center btn-sm'>Details</button></Link>

@@ -75,7 +75,7 @@ Form {
   padding: 20px;
 }
 .image-wrap {
-  width: 280px;
+  width: 100%;
   height: 230px;
   overflow: hidden; 
 }
