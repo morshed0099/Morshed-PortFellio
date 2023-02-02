@@ -1,4 +1,4 @@
-import ParticlesBg from 'particles-bg';
+
 import React, { useEffect, useState } from 'react';
 
 import AboutMe from './AboutMe';

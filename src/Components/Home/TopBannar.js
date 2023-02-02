@@ -36,7 +36,7 @@ const TopBannar = () => {
                                     cursorColor="#3F3D56"
                                     multiText={[
                                         'Hi I am a Full-stack Developer',
-                                        'Hi I am ajavascript Developer',
+                                        'Hi I am a javascript Developer',
                                         'Hi I am a ReactJs Developer',
                                         'Hi I am a Responsive Desginer',
                                         'Hi I am a Frontend Developer',

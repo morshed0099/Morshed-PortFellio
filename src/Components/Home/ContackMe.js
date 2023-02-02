@@ -1,15 +1,15 @@
 import React from 'react';
 import emailjs from 'emailjs-com';
-import { Form, Input, TextArea, Button } from 'semantic-ui-react';
+import { Form, Input, TextArea } from 'semantic-ui-react';
 import Swal from 'sweetalert2';
 
-import { ParallaxBanner } from 'react-scroll-parallax';
+
 
 const ContackMe = () => {
     const SERVICE_ID = process.env.REACT_APP_SERVICE_ID
     const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID
     const USER_ID = process.env.REACT_APP_USER_ID
-    const handleOnSubmit = (e) => {        
+    const handleOnSubmit = (e) => {
         e.preventDefault();
         console.log(e.target);
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, e.target, USER_ID)
@@ -31,60 +31,58 @@ const ContackMe = () => {
     }
     return (
         <>
-            <ParallaxBanner
-
-                layers={[
-                    { image: 'https://th.bing.com/th/id/R.40d93e5d629c34354bd6bbc5c5a61d98?rik=1%2b47yHSi3OQ6Nw&riu=http%3a%2f%2fwww.blended-html.com%2fbackground-images%2fbi-background-black.png&ehk=oo%2fObYmjlQlU%2fZeUkDdkrR8ivwkNOvA9qBw1cqF3%2bOM%3d&risl=&pid=ImgRaw&r=0', speed: -20 },
-                    {
-                        speed: -15,
-                        children: (
-                            <div id='contack' className="absolute inset-0 flex  md:h-auto sm:p-8  items-center justify-center">
-                                <div className="hero">
-                                    <div className="hero-content">
-                                        <div className="card  w-full md:w-[600px] lg:w-[600px]  shadow-2xl bg-opacity-80 bg-base-200">
-                                            <div className="card-body w-full md:w-[600px] lg:w-[600px] ">
-                                                <Form onSubmit={handleOnSubmit}>
-                                                    <Form.Field
-                                                        id='form-input-control-email'
-                                                    control={Input}
-                                                    label='Email'
-                                                    name='user_email'
-                                                    placeholder='Email…'
-                                                    required
-                                                    icon='mail'
-                                                    iconPosition='left'
-        />
-                                                    <Form.Field
-                                                        id='form-input-control-last-name'
-                                                    control={Input}
-                                                    label='Name'
-                                                    name='user_name'
-                                                    placeholder='Name…'
-                                                    required
-                                                    icon='user circle'
-                                                    iconPosition='left'
-        />
-                                                    <Form.Field
-                                                        id='form-textarea-control-opinion'
-                                                    control={TextArea}
-                                                    label='Message'
-                                                    name='user_message'
-                                                    placeholder='Message…'
-                                                    required
-        />
-                                                    <Button type='submit' color='green'>Submit</Button>
-                                            </Form>
-                                        </div>
+            <div id='contack' className=" flex  items-center justify-center">
+                <div className="hero ">
+                    <div className="hero-content">
+                        <div className="card  w-full md:w-[600px] lg:w-[600px]  shadow-2xl border border-light  bg-white dark:bg-black">
+                            <div className="card-body w-full md:w-[600px] lg:w-[600px] ">
+                                <h3 className='text-3xl font-bold text-center dark:text-white '>Send Your Message</h3 >
+                                <Form onSubmit={handleOnSubmit}>
+                                    <lebel className='text-1xl font-bold text-black dark:text-white'>Email</lebel>
+                                    <div className='mb-3'>
+                                        <input type='email'
+                                            className='w-full  input input-bordered'
+                                            control={Input}
+                                            label='Email'
+                                            name='user_email'
+                                            placeholder='Email…'
+                                            required
+                                            icon='mail'
+                                            iconPosition='left'
+                                        />
                                     </div>
-                                </div>
+                                    <div className='mb-3'>
+                                        <lebel className='text-1xl  font-bold text-black dark:text-white'>Name</lebel>
+                                        <input type='text'
+                                            className='w-full mt-3 input input-bordered'
+                                            control={Input}
+                                            label='Name'
+                                            name='user_name'
+                                            placeholder='Name…'
+                                            required
+                                            icon='user circle'
+                                            iconPosition='left'
+                                        />
+                                    </div>
+                                    <lebel className='text-1xl font-bold text-black dark:text-white'>Message</lebel>
+                                    <Form.Field
+                                        id='form-textarea-control-opinion'
+                                        control={TextArea}
+                                        name='user_message'
+                                        placeholder='Message…'
+                                        required
+                                    />
+                                    <div>
+                                     <button className='btn btn-sm w-full bg-indigo-600 border-none '>Send</button>
+                                    </div>
+                                </Form>
                             </div>
-                            </div>
-    ),
-                    },
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                ]}
-className = "aspect-[2/1.25] p-14 "
-    />
+
         </>
     );
 };

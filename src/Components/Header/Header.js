@@ -34,7 +34,7 @@ const Header = ({setDarkMode,darkMode}) => {
             <NavLink className='font-bold text-1xl' to='/blog'>blog</NavLink>
         </>
     return (
-        <div id='navbar' className={`navbar bg-opacity-60 sticky h-[80px] top-0 z-50 bg-base-100 dark:text-white dark:bg-gray-900 ` }>
+        <div id='navbar' className={`navbar bg-white sticky h-[80px] top-0 z-50 dark:text-white dark:bg-gray-900 ` }>
            
             <div className="navbar-start">
                 <div className="dropdown">
