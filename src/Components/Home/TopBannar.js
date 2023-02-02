@@ -45,8 +45,8 @@ const TopBannar = () => {
                                     typeSpeed={30}
                                 />
                             </div>
-                            <a href='https://drive.google.com/file/d/1-1uklwBKkogSh-LmErYld_hHW9WAbcOB/view?usp=sharing'><button className='btn mt-5 mr-3 btn-sm btn-primary'>DownLoad Resume</button></a>
-                            <a href='https://drive.google.com/file/d/1fQ0zIWExccp3ai9wY_8dCWe10dU_qYxW/view?usp=sharing'><button className='btn mt-5 btn-sm btn-primary'>DownLoad cv</button></a>
+                            <a href='https://drive.google.com/file/d/17qWKF1zEr0KN9fZPYBPvM1zpNx90j1ik/view?usp=sharing' download><button className='btn mt-5 mr-3 btn-sm btn-primary'>DownLoad Resume</button></a>
+                            <a href='https://drive.google.com/file/d/102kcTZXizBsjk59c3-IhdBNB5t3GtCKP/view?usp=sharing' download><button className='btn mt-5 btn-sm btn-primary'>DownLoad cv</button></a>
                         </div>
                         <div data-aos="zoom-out-right" className=" md:w-1/2">
 
